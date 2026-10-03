@@ -44,14 +44,14 @@ def Start( args : list ) -> None :
             
             from Clara.DiscordAPI.Bot import ClaraBot
             
-            bot = ClaraBot( token = TOKEN )
+            bot : ClaraBot = ClaraBot( token = TOKEN )
             bot.run( token = TOKEN)
             
         case "daw" :
             return
             
         case "compile" :
-            launchMode = "compile"
+            # launchMode : str = "compile"
             
             if(len(args) >= 3) :
                 try :
